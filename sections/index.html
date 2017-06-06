@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>YADICT</title>
+    <link rel="stylesheet" type="text/css" href="../style/index.css">
+    <link rel="stylesheet" type="text/css" href="../style/nav.css">
+  </head>
+  <body>
+    <div id="top" style="height : 100%">
+      <h1>YADICT!</h1>
+      <button class="code" id="codeBtn">Código</button>
+      <button class="inception" id="startBtn">START</button>
+      <button class="license" id="licenseBtn">Licencia</button>
+    </div>
+    <div id="nav_menu">
+      <nav class="nav js-nav">
+	<header class="nav-header">
+	  <h2 class="nav-title">YADICT!</h2>
+	</header>
+	<div class="nav-item u-category-windows">
+	  <h5 class="nav-category">
+            Ejercicios
+	  </h5>
+	  <button type="button" id="ejercicio1" data-section="ejercicio1"
+		  class="nav-button">Ejercicio 1</button>
+	  <button type="button" id="ejercicio2" data-section="ejercicio2"
+		  class="nav-button">Ejercicio 2</button>
+	  <button type="button" id="ejercicio2" data-section="ejercicio2"
+		  class="nav-button">Ejercicio 3</button>
+	  <button type="button" id="ejercicio2" data-section="ejercicio2"
+		  class="nav-button">Ejercicio 4</button>
+	  <button type="button" id="ejercicio2" data-section="ejercicio2"
+		  class="nav-button">Ejercicio 5</button>
+	  <button type="button" id="ejercicio2" data-section="ejercicio2"
+		  class="nav-button">Ejercicio 6</button>
+	  <button type="button" id="ejercicio2" data-section="ejercicio2"
+		  class="nav-button">Ejercicio 7</button>
+	  <button type="button" id="ejercicio2" data-section="ejercicio2"
+		  class="nav-button">Ejercicio 8</button>
+	  
+	</div>
+	<div class="nav-item u-category-menu">
+	  <h5 class="nav-category">
+            Textos
+	  </h5>
+	  <button type="button" id="poem" data-section="poem" class="nav-button">Poema</button>
+	  <button type="button" id="news" data-section="news" class="nav-button">Noticia</button>
+	  <button type="button" id="news" data-section="news" class="nav-button">Cuento</button>
+	</div>
+	<div class="nav-item u-category-native-ui">
+	  <h5 class="nav-category">
+            JUegos
+	  </h5>
+	  <button type="button" id="game1" data-section="game1" class="nav-button">Game 1</button>
+	  <button type="button" id="game2" data-section="game2" class="nav-button">Game 2</button>
+	  <button type="button" id="game2" data-section="game2" class="nav-button">Game 3</button>
+	  <button type="button" id="game2" data-section="game2" class="nav-button">Game 4</button>
+	</div>
+	<h3 id="developer">
+	  Desarrollado por Daniel García Vaglio
+	</h3>
+      </nav>
+    </div>
+
+    <search id="search">
+      buscar...
+      
+    </search>
+    <enunciado id="enunciado">
+      texto..
+      
+    </enunciado>
+    <respuestas id="respuestas">
+      rtexto..
+      
+    </respuestas>
+    <resultado id="resultado">
+      resulttexto..
+      
+    </resultado>
+    
+    <version class="version" id="version">
+      <p>
+      Desarrollado por Daniel García Vaglio --degv364@gmail.com--
+      </p>
+      Versions:
+      We are using Node.js <script>document.write(process.versions.node)</script>,
+      Chromium <script>document.write(process.versions.chrome)</script>,
+      and Electron <script>document.write(process.versions.electron)</script>.
+    </version>
+  </body>
+  <script>
+    // You can also require other files to run in this process
+    require('../renderer/renderer.js')
+  </script>
+</html>
+
+
+

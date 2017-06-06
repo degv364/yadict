@@ -1,0 +1,134 @@
+
+h1 { color: #1e5bcc;
+     font-family: 'Helvetica Neue', sans-serif;
+     font-size: 46px;
+     font-weight: 100;
+     line-height: 50px;
+     letter-spacing: 1px;
+     padding: 0 0 40px;
+     text-align: center;
+   }
+
+@keyframes fadeIn {
+    0% {
+	opacity: 0;	
+    }
+    100% {
+	opacity: 1;	
+    }
+}
+@-webkit-keyframes reFadeIn{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+search{
+    height: 25px;
+    width: 380px;
+    position : absolute;
+    left: 800px;
+    top: 10px;
+    background-color: #eeeeee;
+    border-radius: 12px;
+}
+
+enunciado{
+    height: 500px;
+    width: 500px;
+    position : absolute;
+    left: 290px;
+    top: 10px;
+    background-color: #eeeeee;
+    border-radius: 18px;
+}
+respuestas{
+    height: 200px;
+    width: 500px;
+    position : absolute;
+    left: 290px;
+    top: 520px;
+    background-color: #eeeeee;
+    border-radius: 18px;
+}
+resultado{
+    height: 670px;
+    width: 380px;
+    position : absolute;
+    left: 800px;
+    top: 50px;
+    background-color: #eeeeee;
+    border-radius: 18px;
+}
+
+html {
+  height: 100%;
+}
+
+body{
+    text-align: center;
+    height: 100%;
+}
+
+
+button {
+    border: 0;
+    background: #2e6bdc;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 #004599;
+    color: #ffffff;
+    cursor: pointer;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 12px 20px;
+    transition: all .1s linear;
+    text-align: center;
+}
+.inception{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    z-index: -1;
+    
+}
+button:hover{
+    background: #2db34a;
+    box-shadow: 0 5px 0 #0d932a;
+}
+button:active {
+    box-shadow: 0 2px 0 #0d932a;
+    transform: translateY(3px);
+}
+.code{
+    background: #d7a914;
+    box-shadow: 0 0px 0 #004599;
+    animation: 1s ease-out 0s 1 fadeIn;
+    
+}
+.license{
+    background: #d7a914;
+    box-shadow: 0 0px 0 #004599;
+    animation: 1s ease-out 0s 1 fadeIn;
+    
+}
+.license:hover{
+    background: #b68f11;
+    box-shadow: 0 0px 0 #0d932a;
+}
+.code:hover{
+    background: #b68f11;
+    box-shadow: 0 0px 0 #0d932a;
+}
+
+.version{
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+

@@ -1,0 +1,16 @@
+{
+  "name": "yadict",
+  "version": "1.0.0",
+  "description": "Yet Another DICTionary",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/degv364/yadict",
+  "keywords": [
+    "Electron",
+    "dictionary"
+  ],
+  "author": "Daniel Garcia Vaglio",
+  "license": "LGPL-3.0"
+}

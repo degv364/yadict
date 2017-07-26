@@ -1,7 +1,7 @@
 [
     {
 	"name":"Name 1",
-	"info":"Este es el texto de la pregunta",
+	"info":"Este es el texto de la pregunta Numero 1. Es simplemente un ejemplo, y no se debe confundir con una pregunta verdadera. Lo que se hace es hacerlo lo suficientemente largo, como para que se teng que hacer wrap dentro e la linea, a ver si sirve.",
 	"options":{
 	    "A":"opcion a",
 	    "B":"opcion b",
@@ -9,11 +9,11 @@
 	    "D":"opcion d",
 	    "E":"opcion e"
 	},
-	"answer":"a"
+	"answer":"A"
     },
     {
 	"name":"Name 2",
-	"info":"Este es otro texto",
+	"info":"Este es otro texto \n \n \n y ahora pruebo lo caracteres de cambio de linea...",
 	"options":{
 	    "A":"otra a",
 	    "B":"otra b",
@@ -21,6 +21,6 @@
 	    "D":"otra d",
 	    "E":"otra e"
 	},
-	"answer":"b"
+	"answer":"B"
     }
 ]

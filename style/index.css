@@ -27,41 +27,52 @@ h1 { color: #1e5bcc;
 }
 
 search{
-    height: 25px;
-    width: 380px;
+    height: 23px;
+    width: 360px;
     position : absolute;
     left: 800px;
     top: 10px;
     background-color: #eeeeee;
     border-radius: 12px;
+    font-size: 13px;
+    padding: 10px 10px;
+    text-align: justify;
 }
 
 enunciado{
-    height: 500px;
-    width: 500px;
+    height: 490px;
+    width: 480px;
     position : absolute;
     left: 290px;
     top: 10px;
     background-color: #eeeeee;
     border-radius: 18px;
+    text-align: justify;
+    font-size: 13px;
+    padding: 10px 10px;
 }
-respuestas{
-    height: 200px;
-    width: 500px;
+options{
+    height: 190px;
+    width: 480px;
     position : absolute;
     left: 290px;
-    top: 520px;
+    top: 530px;
     background-color: #eeeeee;
     border-radius: 18px;
+    text-align: justify;
+    padding: 10px 10px;
 }
 resultado{
-    height: 670px;
-    width: 380px;
+    height: 660px;
+    width: 360px;
     position : absolute;
     left: 800px;
-    top: 50px;
+    top: 60px;
     background-color: #eeeeee;
     border-radius: 18px;
+    font-size: 13px;
+    padding: 10px 10px;
+    text-align: justify;
 }
 
 html {
@@ -146,6 +157,14 @@ button:active {
     width: 60px;
     height: 30px;
     padding: 0px 0px;
+}
+
+.option-button{
+    padding: 2px 2px;
+    /*background: #000000;*/
+    width: 100%;
+    font-size: 13px;
+    text-align: justify;
 }
 
 

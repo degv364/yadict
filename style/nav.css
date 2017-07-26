@@ -77,7 +77,7 @@ h5{
     background-color: hsla(0,0%,0%,.1);
 }
 .nav-button.is-selected {
-    background-color: gray;/*var(--color-accent);*/
+    background-color: #004599;
 }
 .nav-button.is-selected,
 .nav-button.is-selected em {

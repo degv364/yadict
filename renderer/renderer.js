@@ -57,18 +57,14 @@ function option_check(input_answer){
     var correct_answer = global_exercises[global_exercise_index]["answer"];
     if (input_answer === correct_answer){
 	solved_items.add(global_exercise_index);
-
-	var percentage = solved_items.size/global_exercises.length * 100;
-	progress_bar.style.width = percentage.toString()+"%";
 	progress_bar.style.background = "#2db34a";
-	progress_bar.innerHTML = percentage.toString()+"%";
-	
-	console.log(solved_items.size);
     }
     else{
 	progress_bar.style.background = "#d34a17";
-	console.log("incorrrecto");
     }
+    var percentage = solved_items.size/global_exercises.length * 100;
+    progress_bar.style.width = percentage.toString()+"%";
+    progress_bar.innerHTML = percentage.toString()+"%";
 }
 
 function display_enunciado(index){

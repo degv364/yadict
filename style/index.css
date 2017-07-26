@@ -129,6 +129,23 @@ button:active {
     bottom: 0;
 }
 
+.quit{
+    background: #d34a17;
+    box-shadow: 0 5px 0 #8a300f;
+    width: 60px;
+    height: 30px;
+    padding: 0px 0px;
+}
+.back{
+    width: 60px;
+    height: 30px;
+    padding: 0px 0px;
+}
 
+.next{
+    width: 60px;
+    height: 30px;
+    padding: 0px 0px;
+}
 
 

@@ -1,0 +1,26 @@
+[
+    {
+	"name":"Name 1",
+	"info":"Este es el texto de la pregunta",
+	"options":{
+	    "A":"opcion a",
+	    "B":"opcion b",
+	    "C":"opcion c",
+	    "D":"opcion d",
+	    "E":"opcion e"
+	},
+	"answer":"a"
+    },
+    {
+	"name":"Name 2",
+	"info":"Este es otro texto",
+	"options":{
+	    "A":"otra a",
+	    "B":"otra b",
+	    "C":"otra c",
+	    "D":"otra d",
+	    "E":"otra e"
+	},
+	"answer":"b"
+    }
+]

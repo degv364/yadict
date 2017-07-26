@@ -22,5 +22,17 @@
 	    "E":"otra e"
 	},
 	"answer":"B"
+    },
+    {
+	"name":"Ejercicio 3",
+	"info":"Este es el enunciado del tercer ejecricioquiero descubrir como poner cambios de linea",
+	"options":{
+	    "A":"La primera opcion",
+	    "B":"No la primera",
+	    "C":"La primera y la segunda",
+	    "D":"La tercera pero no la segunda",
+	    "E":"Ninguna de las anteriores"
+	},
+	"answer":"A"
     }
 ]

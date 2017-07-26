@@ -17,6 +17,9 @@ const enunciado  = document.getElementById('enunciado')
 const options    = document.getElementById('options')
 const result     = document.getElementById('resultado')
 const search_box = document.getElementById('search')
+const user       = document.getElementById('user')
+const status     = document.getElementById('status')
+const progress_bar = document.getElementById('progress_bar')
 
 const startBtn   = document.getElementById('startBtn')
 const licenseBtn = document.getElementById('licenseBtn')
@@ -26,21 +29,48 @@ const quitBtn   = document.getElementById('quit')
 const backBtn   = document.getElementById('back')
 const nextBtn   = document.getElementById('next')
 
+const option_ABtn = document.getElementById('option_a');
+const option_BBtn = document.getElementById('option_b');
+const option_CBtn = document.getElementById('option_c');
+const option_DBtn = document.getElementById('option_d');
+const option_EBtn = document.getElementById('option_e');
+
 //hide everything at the beguinning
 nav_menu.style.display   = 'none';
 enunciado.style.display  = 'none';
 options.style.display    = 'none';
 result.style.display     = 'none';
 search_box.style.display = 'none';
+user.style.display       = 'none';
+status.style.display     = 'none';
 
 //global state variables
 var global_exercises = false;
 var global_is_first = true;
 var global_exercise_index = false;
 var global_correct_option = false;
+let solved_items = new Set();
 
 
 //Functions------------------------------------------------------------------
+function option_check(input_answer){
+    var correct_answer = global_exercises[global_exercise_index]["answer"];
+    if (input_answer === correct_answer){
+	solved_items.add(global_exercise_index);
+
+	var percentage = solved_items.size/global_exercises.length * 100;
+	progress_bar.style.width = percentage.toString()+"%";
+	progress_bar.style.background = "#2db34a";
+	progress_bar.innerHTML = percentage.toString()+"%";
+	
+	console.log(solved_items.size);
+    }
+    else{
+	progress_bar.style.background = "#d34a17";
+	console.log("incorrrecto");
+    }
+}
+
 function display_enunciado(index){
     global_exercise_index = index;
     var enunciado = document.getElementById('enunciado');
@@ -49,17 +79,26 @@ function display_enunciado(index){
 
 function display_options(index){
     global_exercise_index = index;
-    document.getElementById('option_a').innerHTML = global_exercises[index]["options"]["A"];
-    document.getElementById('option_b').innerHTML = global_exercises[index]["options"]["B"];
-    document.getElementById('option_c').innerHTML = global_exercises[index]["options"]["C"];
-    document.getElementById('option_d').innerHTML = global_exercises[index]["options"]["D"];
-    document.getElementById('option_e').innerHTML = global_exercises[index]["options"]["E"];
+    option_ABtn.innerHTML = global_exercises[index]["options"]["A"];
+    option_BBtn.innerHTML = global_exercises[index]["options"]["B"];
+    option_CBtn.innerHTML = global_exercises[index]["options"]["C"];
+    option_DBtn.innerHTML = global_exercises[index]["options"]["D"];
+    option_EBtn.innerHTML = global_exercises[index]["options"]["E"];
+    
     global_correct_option = global_exercises[index]["answer"];
+    progress_bar.style.backgound = '#2e6bdc';
+}
+
+function display_exercise_name(index){
+    var temp = user.innerHTML;
+    //FIXME: disabled temporarily
+    //user.innerHTML = global_exercises[index]["name"]+temp;
 }
 
 function display_all(index){
-    	display_enunciado(index);
-	display_options(index);
+    display_enunciado(index);
+    display_options(index);
+    display_exercise_name(index);
 }
 
 
@@ -85,9 +124,14 @@ startBtn.addEventListener('click', function (event) {
     
     enunciado.style.display   = 'block';
     enunciado.style.animation = "reFadeIn 2s forwards;";
-    options.style.display  = 'block';
-    result.style.display   = 'block';
-    search_box.style.display      = 'block';
+    options.style.display     = 'block';
+    result.style.display      = 'block';
+    search_box.style.display  = 'block';
+    user.style.display        = 'block';
+    status.style.display      = 'block';
+
+    //FIXME: visit this in the future
+    progress_bar.style.width = '0%';
 
     if (global_is_first){
 	global_is_first = false;
@@ -124,8 +168,25 @@ quitBtn.addEventListener('click', function(event) {
     options.style.display    = 'none';
     result.style.display     = 'none';
     search_box.style.display = 'none';
+    user.style.display       = 'none';
+    status.style.display     = 'none';
 
     version.style.display = 'block';
     top.style.display     = 'block';
 })
 
+option_ABtn.addEventListener('click', function(event){
+    option_check("A");
+})
+option_BBtn.addEventListener('click', function(event){
+    option_check("B");
+})
+option_CBtn.addEventListener('click', function(event){
+    option_check("C");
+})
+option_DBtn.addEventListener('click', function(event){
+    option_check("D");
+})
+option_EBtn.addEventListener('click', function(event){
+    option_check("E");
+})

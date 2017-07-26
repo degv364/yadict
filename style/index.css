@@ -27,11 +27,11 @@ h1 { color: #1e5bcc;
 }
 
 search{
-    height: 23px;
+    height: 25px;
     width: 360px;
     position : absolute;
     left: 800px;
-    top: 10px;
+    top: 40px;
     background-color: #eeeeee;
     border-radius: 12px;
     font-size: 13px;
@@ -44,7 +44,7 @@ enunciado{
     width: 480px;
     position : absolute;
     left: 290px;
-    top: 10px;
+    top: 40px;
     background-color: #eeeeee;
     border-radius: 18px;
     text-align: justify;
@@ -56,7 +56,7 @@ options{
     width: 480px;
     position : absolute;
     left: 290px;
-    top: 530px;
+    top: 560px;
     background-color: #eeeeee;
     border-radius: 18px;
     text-align: justify;
@@ -67,12 +67,49 @@ resultado{
     width: 360px;
     position : absolute;
     left: 800px;
-    top: 60px;
+    top: 90px;
     background-color: #eeeeee;
     border-radius: 18px;
     font-size: 13px;
     padding: 10px 10px;
     text-align: justify;
+}
+
+status{
+    height: 25px;
+    width: 500px;
+    position : absolute;
+    left: 290px;
+    top: 10px;
+    text-align:left;
+    background-color: #999999;
+}
+
+.progress_bar{
+    height:100%;
+    width:50%;
+    background: #2e6bdc;
+    font-size: 13px;
+    padding: 0px 0px;
+    text-align: justify;
+    box-shadow: 0 0px 0 #004599;
+}
+.progress_bar:hover{
+    background: #2e6bdc;
+    box-shadow: 0 0px 0 #0d932a;
+}
+.progress_bar:active {
+    box-shadow: 0 0px 0 #0d932a;
+    transform: translateY(0px);
+}
+
+user{
+    height: 25px;
+    width: 360px;
+    position : absolute;
+    left: 800px;
+    top: 10px;
+    text-align: right;
 }
 
 html {
@@ -166,5 +203,7 @@ button:active {
     font-size: 13px;
     text-align: justify;
 }
+
+
 
 

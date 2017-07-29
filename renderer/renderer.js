@@ -17,10 +17,11 @@ const enunciado  = document.getElementById('enunciado')
 const options    = document.getElementById('options')
 const result     = document.getElementById('resultado')
 const search_box = document.getElementById('search')
-const user       = document.getElementById('user')
+const user_box   = document.getElementById('user')
 const status     = document.getElementById('status')
 const progress_bar = document.getElementById('progress_bar')
 
+const input_name_box = document.getElementById('user_name_text')
 const startBtn   = document.getElementById('startBtn')
 const licenseBtn = document.getElementById('licenseBtn')
 const codeBtn    = document.getElementById('codeBtn')
@@ -41,7 +42,7 @@ enunciado.style.display  = 'none';
 options.style.display    = 'none';
 result.style.display     = 'none';
 search_box.style.display = 'none';
-user.style.display       = 'none';
+user_box.style.display   = 'none';
 status.style.display     = 'none';
 
 //global state variables
@@ -50,6 +51,7 @@ var global_is_first = true;
 var global_exercise_index = false;
 var global_correct_option = false;
 let solved_items = new Set();
+var global_user_name = "";
 
 
 //Functions------------------------------------------------------------------
@@ -63,8 +65,8 @@ function option_check(input_answer){
 	progress_bar.style.background = "#d34a17";
     }
     var percentage = solved_items.size/global_exercises.length * 100;
-    progress_bar.style.width = percentage.toString()+"%";
-    progress_bar.innerHTML = percentage.toString()+"%";
+    progress_bar.style.width = percentage.toFixed(2).toString()+"%";
+    progress_bar.innerHTML = percentage.toFixed(2).toString()+"%";
 }
 
 function display_enunciado(index){
@@ -85,16 +87,20 @@ function display_options(index){
     progress_bar.style.backgound = '#2e6bdc';
 }
 
-function display_exercise_name(index){
-    var temp = user.innerHTML;
-    //FIXME: disabled temporarily
-    //user.innerHTML = global_exercises[index]["name"]+temp;
+function display_name(index){
+    var text = "";
+    if (index >= 0){
+	text = global_exercises[index]["name"]+" --  "
+    }
+    text+=global_user_name;
+    user_box.innerHTML = text;
+    var temp = user_box.innerHTML;
 }
 
 function display_all(index){
     display_enunciado(index);
     display_options(index);
-    display_exercise_name(index);
+    display_name(index);
 }
 
 
@@ -123,10 +129,9 @@ startBtn.addEventListener('click', function (event) {
     options.style.display     = 'block';
     result.style.display      = 'block';
     search_box.style.display  = 'block';
-    user.style.display        = 'block';
+    user_box.style.display    = 'block';
     status.style.display      = 'block';
-
-    //FIXME: visit this in the future
+    
     progress_bar.style.width = '0%';
 
     if (global_is_first){
@@ -145,6 +150,12 @@ startBtn.addEventListener('click', function (event) {
 	    create_nav_button(index);
 	}
     }
+    var temp_user_name = input_name_box.value;
+    if (temp_user_name != "Digita tu nombre"){
+	global_user_name = temp_user_name.replace(/\W/g, '');
+	display_name(-1)
+    }
+    
     
 })
 

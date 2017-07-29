@@ -48,13 +48,23 @@ status.style.display     = 'none';
 //global state variables
 var global_exercises = false;
 var global_is_first = true;
-var global_exercise_index = false;
+var global_exercise_index = -1;
 var global_correct_option = false;
 let solved_items = new Set();
 var global_user_name = "";
 
 
 //Functions------------------------------------------------------------------
+function mod(n, m){
+    //n mod m
+    // javascript module outputs negative numbers... :(
+    var r = n%m;
+    if (r<0){
+	return m+r;
+    }
+    return r
+}
+
 function option_check(input_answer){
     var correct_answer = global_exercises[global_exercise_index]["answer"];
     if (input_answer === correct_answer){
@@ -196,4 +206,14 @@ option_DBtn.addEventListener('click', function(event){
 })
 option_EBtn.addEventListener('click', function(event){
     option_check("E");
+})
+
+backBtn.addEventListener('click', function(event){
+    global_exercise_index = mod((global_exercise_index-1),(global_exercises.length));
+    display_all(global_exercise_index);
+})
+
+nextBtn.addEventListener('click', function(event){
+    global_exercise_index = mod((global_exercise_index+1),(global_exercises.length));
+    display_all(global_exercise_index);
 })

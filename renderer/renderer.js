@@ -52,9 +52,17 @@ var global_exercise_index = -1;
 var global_correct_option = false;
 let solved_items = new Set();
 var global_user_name = "";
+var global_definitions = [];
 
 
 //Functions------------------------------------------------------------------
+function replaceAll(s_in, s_rep, s_new){
+    while(s_in.includes(s_rep)){
+	s_in = s_in.replace(s_rep, s_new);
+    }
+    return s_in;
+}
+
 function mod(n, m){
     //n mod m
     // javascript module outputs negative numbers... :(
@@ -63,6 +71,67 @@ function mod(n, m){
 	return m+r;
     }
     return r
+}
+
+function parse_dictionaries(){
+    var exercises_data = fs.readFileSync('data/exercises.json','utf8', function(err, data){
+	if (err) {
+	    return console.log(err);
+	}
+	return data
+    });
+    
+    global_exercises = JSON.parse(exercises_data);
+
+    var definitions_data = fs.readFileSync('data/definitions.json','utf8', function(err, data){
+	if (err) {
+	    return console.log(err);
+	}
+	return data
+    });
+    
+    global_definitions = JSON.parse(definitions_data);
+}
+
+function get_definition(idx){
+    replace_dif_word(global_exercise_index, idx);
+    //eliminate current buttons
+    while (result.firstChild) {
+	result.removeChild(result.firstChild);
+    }
+    var word = global_definitions[idx]["word"];
+    var word_def = global_definitions[idx]["definition"];
+    var result_header = "<h5>"+word+"</h5>";
+
+    //create return button
+    var btn = document.createElement("button");
+    btn.setAttribute("id", "back-def");
+    var t = document.createTextNode("Volver");       
+    btn.appendChild(t);
+    btn.addEventListener('click', function(event){
+	display_result(global_exercise_index);
+    });
+    result.innerHTML = result_header+word_def+"</br></br></br>";
+    result.appendChild(btn);
+    
+}
+
+function replace_dif_word(index, idx){
+    var temp_name = global_exercises[index]["name"];
+    var temp_data = global_exercises[index]["info"];
+    var word = global_definitions[idx]["word"];
+    //replace new lines
+    temp_data = replaceAll(temp_data, '\n', "<br/>");
+    //replace dif_words
+    temp_data = replaceAll(temp_data, word, "<!-->");//workaround to recursive replacement
+    temp_data = replaceAll(temp_data, "<!-->", "<b>"+word+"</b>");
+    //Add name tag
+    temp_data = "<h5> "+temp_name+"</h5> <br/><br/>"+temp_data
+    display_enunciado_data(temp_data);
+}
+
+function display_enunciado_data(data){
+    enunciado.innerHTML = data;
 }
 
 function option_check(input_answer){
@@ -81,8 +150,13 @@ function option_check(input_answer){
 
 function display_enunciado(index){
     global_exercise_index = index;
-    var enunciado = document.getElementById('enunciado');
-    enunciado.innerHTML = global_exercises[index]["info"];  
+    var temp_name = global_exercises[index]["name"];
+    var temp_data = global_exercises[index]["info"];
+    //repalce new lines
+    temp_data = replaceAll(temp_data, '\n', "<br/>");
+    //Add name tag
+    temp_data = "<h5> "+temp_name+"</h5> <br/><br/>"+temp_data;
+    display_enunciado_data(temp_data);  
 }
 
 function display_options(index){
@@ -107,10 +181,29 @@ function display_name(index){
     var temp = user_box.innerHTML;
 }
 
+function display_result(index){
+    global_exercise_index = index;
+    //eliminate current buttons
+    while (result.firstChild) {
+	result.removeChild(result.firstChild);
+    }
+    result.innerHTML = "<h5>Palabras complejas</h5>";
+    //add new buttons
+    var idx_max = global_definitions.length; 
+    for (idx = 0; idx<idx_max; idx++){
+	var word = global_definitions[idx]["word"];
+	var question = global_exercises[index]["info"];
+	if (question.includes(word)){
+	    create_def_button(idx);
+	}
+    }  
+}
+
 function display_all(index){
     display_enunciado(index);
     display_options(index);
     display_name(index);
+    display_result(index);
 }
 
 
@@ -125,6 +218,28 @@ function create_nav_button(index){
 	display_all(index);
     });
     document.getElementById('exercises_list').appendChild(btn);                    
+}
+
+function create_def_button(idx){
+    var input_id = global_definitions[idx]["word"];
+    var btn = document.createElement("button");
+    btn.setAttribute("id", input_id);
+    btn.setAttribute("class", "nav-button");
+    var t = document.createTextNode(input_id);       
+    btn.appendChild(t);
+    btn.addEventListener('click', function(event){
+	get_definition(idx);
+    });
+    result.appendChild(btn);
+}
+
+
+function get_user_name(){
+    var temp_user_name = input_name_box.value;
+    if (temp_user_name != "Digita tu nombre"){
+	global_user_name = temp_user_name.replace(/\W/g, '');
+	display_name(-1)
+    }
 }
 
 //events-------------------------------------------------------------------
@@ -147,25 +262,14 @@ startBtn.addEventListener('click', function (event) {
     if (global_is_first){
 	global_is_first = false;
 
-	var exercises_data = fs.readFileSync('data/exercises.json','utf8', function(err, data){
-	    if (err) {
-		return console.log(err);
-	    }
-	    return data
-	});
+	parse_dictionaries();
 	
-	global_exercises = JSON.parse(exercises_data); 
-	
+	//create nav buttons
 	for (index = 0; index < global_exercises.length; index++) {
 	    create_nav_button(index);
 	}
     }
-    var temp_user_name = input_name_box.value;
-    if (temp_user_name != "Digita tu nombre"){
-	global_user_name = temp_user_name.replace(/\W/g, '');
-	display_name(-1)
-    }
-    
+    get_user_name();
     
 })
 

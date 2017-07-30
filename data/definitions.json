@@ -1,7 +1,12 @@
-{
-    "definitions":{
-	"word1":"es la primera palabra",
-	"word2":"es la segunda palabra",
-	"word3":"es la tercera palabra"
+[
+    {
+	"word":"palabra uno",
+	"definition":"Esta es la primera palabra",
+	"alternatives":["palabra primera","first word"]
+    },
+    {
+	"word":"palabra dos",
+	"definition":"Esta es la segunda palabra",
+	"alternatives":["palabra segunda","second word"]
     }
-}
+]

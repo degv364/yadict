@@ -13,7 +13,7 @@
     },
     {
 	"name":"Name 2",
-	"info":"Este es otro texto \n \n \n y ahora pruebo lo caracteres de cambio de linea...",
+	"info":"Este es otro texto \n \n y ahora pruebo lo caracteres de cambio de linea...\n palabra dos palabra uno",
 	"options":{
 	    "A":"otra a",
 	    "B":"otra b",
@@ -25,7 +25,7 @@
     },
     {
 	"name":"Ejercicio 3",
-	"info":"Este es el enunciado del tercer ejecricioquiero descubrir como poner cambios de linea",
+	"info":"Este es el enunciado del tercer ejecricio \n quiero descubrir como poner cambios de linea palabra uno eso de atras deberia detectarse",
 	"options":{
 	    "A":"La primera opcion",
 	    "B":"No la primera",

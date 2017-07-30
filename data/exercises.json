@@ -1,38 +1,38 @@
 [
     {
-	"name":"Name 1",
-	"info":"Este es el texto de la pregunta Numero 1. Es simplemente un ejemplo, y no se debe confundir con una pregunta verdadera. Lo que se hace es hacerlo lo suficientemente largo, como para que se teng que hacer wrap dentro e la linea, a ver si sirve.",
+	"name":"Ejercicio 17",
+	"info":"Algunos magos afirman que, cuando visitan un bosque o un desierto, son capaces de sentir y ver el silencio, como si la ausencia de sonido tuviera alguna propiedad --aún no descubierta por la ciencia--  más allá de lo meramente auditivo. Ahora bien, también es posible encontrar personas que ni siquiera creen en la existencia de los átomos, las ondas sonoras ni de ningún otro tipo de cosas invisibles para el ser humano, cuya percepción solo puede darse a través de instrumentos tecnológicos especiales.\n\nEn el texto anterior se plantea:",
 	"options":{
-	    "A":"opcion a",
-	    "B":"opcion b",
-	    "C":"opcion c",
-	    "D":"opcion d",
-	    "E":"opcion e"
+	    "A":"Una contradicción entre ciencia y magia.",
+	    "B":"La transición entre lo observable y lo invisible.",
+	    "C":"La desconfianza de la ciencia en cuanto a las percepciones de los magos",
+	    "D":"Imposibilidad de percibir cosas muy pequeñas sin instrumentos tecnológicos.",
+	    "E":"Un contraste con respecto a la confianza que tienen las personas sobre las cosas no visibles."
 	},
-	"answer":"A"
+	"answer":"E"
     },
     {
-	"name":"Name 2",
-	"info":"Este es otro texto \n \n y ahora pruebo lo caracteres de cambio de linea...\n palabra dos palabra uno",
+	"name":"Ejercicio 18",
+	"info":"Si todos los humanos tuvieran un completo recuerdo del pasado, conocimiento del presente y previsión del futuro, los razonamientos engañosos hábilmente expuestos por los mentirosos no podrían engañarlos del modo como lo hacen. \n\nDe acuerdo con el texto anterior:",
 	"options":{
-	    "A":"otra a",
-	    "B":"otra b",
-	    "C":"otra c",
-	    "D":"otra d",
-	    "E":"otra e"
+	    "A":"Quien razona hábilmente puede recordar el pasado.",
+	    "B":"Los conocimientos del presente son falseados por los mentirosos.",
+	    "C":"Conocer el pasado, el presente y el futuro nos permite razonar hábilmente.",
+	    "D":"Las personas engañadas poseen conocimientos incompletos sobre la realidad.",
+	    "E":"Los mentirosos engañan sobre todo mediante razonamientos hábilmente expuestos."
 	},
-	"answer":"B"
+	"answer":"C"
     },
     {
-	"name":"Ejercicio 3",
-	"info":"Este es el enunciado del tercer ejecricio \n quiero descubrir como poner cambios de linea palabra uno eso de atras deberia detectarse",
+	"name":"Ejercicio 19",
+	"info":"El ser humano nace como persona cuando está en capacidad de escoger.\n\nEl autor del texto anterior establece que se es persona, cuando se adquiere",
 	"options":{
-	    "A":"La primera opcion",
-	    "B":"No la primera",
-	    "C":"La primera y la segunda",
-	    "D":"La tercera pero no la segunda",
-	    "E":"Ninguna de las anteriores"
+	    "A":"El desarrollo intelectual.",
+	    "B":"Capacidad creativa.",
+	    "C":"Suficiente edad.",
+	    "D":"Madurez física.",
+	    "E":"Criterio propio."
 	},
-	"answer":"A"
+	"answer":"E"
     }
 ]

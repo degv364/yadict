@@ -125,6 +125,11 @@ function replace_dif_word(index, idx){
     //replace dif_words
     temp_data = replaceAll(temp_data, word, "<!-->");//workaround to recursive replacement
     temp_data = replaceAll(temp_data, "<!-->", "<b>"+word+"</b>");
+    //replace at first word of sentence
+    word = word.charAt(0).toUpperCase()+word.substring(1);
+    temp_data = replaceAll(temp_data, word, "<!-->");//workaround to recursive replacement
+    temp_data = replaceAll(temp_data, "<!-->", "<b>"+word+"</b>");
+    
     //Add name tag
     temp_data = "<h5> "+temp_name+"</h5> <br/><br/>"+temp_data
     display_enunciado_data(temp_data);
@@ -193,6 +198,11 @@ function display_result(index){
     for (idx = 0; idx<idx_max; idx++){
 	var word = global_definitions[idx]["word"];
 	var question = global_exercises[index]["info"];
+	if (question.includes(word)){
+	    create_def_button(idx);
+	}
+	//also first word of sentence
+	word = word.charAt(0).toUpperCase()+word.substring(1);
 	if (question.includes(word)){
 	    create_def_button(idx);
 	}

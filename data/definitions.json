@@ -1,12 +1,26 @@
 [
     {
-	"word":"palabra uno",
-	"definition":"Esta es la primera palabra",
-	"alternatives":["palabra primera","first word"]
+	"word":"meramente",
+	"definition":"Adverbio: Simple, sin otra cosa",
+	"alternatives":["simplemente","solamente"],
+	"example":"Las innivaciones de esta empresa son meramente superficiales"
     },
     {
-	"word":"palabra dos",
-	"definition":"Esta es la segunda palabra",
-	"alternatives":["palabra segunda","second word"]
+	"word":"ahora bien",
+	"definition":"Frase: Sirve apra introducir oposición a lo dicho anteriormente.",
+	"alternatives":["pero","sin embargo"],
+	"example":"Haga lo que quiera. Ahora bien, luego no se queje"
+    },
+    {
+	"word":"hábilmente",
+	"definition":"Adverbio: Realizar una acción con destreza o habilidad",
+	"alternatives":["con habilidad", "diestramente"],
+	"example":"La gacela se escapó hábilmente del león."
+    },
+    {
+	"word":"ni siquiera",
+	"definition":"Frase: suele utilizarse para enfatizar la negación de un suceso que se considera lo mínimo esperable",
+	"alternatives":["no"],
+	"example":"Estaba tan cansada que ni siquiera me saludó al llegar."
     }
 ]

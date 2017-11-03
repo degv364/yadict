@@ -46,5 +46,77 @@
 	    "E":"Enemiga del egoísmo."
 	},
 	"answer":"B"
-    }  
+    },
+    {
+	"name":"Ejercicio 21",
+	"info":"En las profundidades del mar, dadas sus características especiales, existe una fauna completamente desconocida en otras partes del mar. \n\nDel texto anterior es correcto concluir que, respecto a las diferentes partes del mar, la fauna de las profundidades es, con certeza",
+	"options":{
+	    "A":"Muy compleja",
+	    "B":"Muy variada",
+	    "C":"Distinta",
+	    "D":"Hermosa",
+	    "E":"Peligrosa"
+	},
+	"answer":"C"
+    },
+    {
+	"name":"Ejercicio 22",
+	"info":"Nadie puede constituirse en dueño de la verdad, esta no tiene propietario.  Se alcanza o se demuestra, eso es todo; lo demás no tiene sentido.\nObserve las siguientes expresiones:\n\n I. No tiene sentido demostrar la verdad.\n II. No tiene sentido alcanzar la verdad.\n III. No tiene sentido adueñarse de la verdad.\n\nDe acuerdo con la información dada",
+	"options":{
+	    "A":"Todas son verdaderas",
+	    "B":"Ninguna es verdadera",
+	    "C":"Solo la I es verdadera",
+	    "D":"Solo la II es verdadera",
+	    "E":"Solo la III es verdadera"
+	},
+	"answer":"E"
+    },
+    {
+	"name":"Ejercicio 23",
+	"info":"A altos pensamientos es preciso que correspondan sublimes expresiones.\n\nEl texto anterior propone una correspondencia entre",
+	"options":{
+	    "A":"Explicar y sugerir",
+	    "B":"Meditar y observar",
+	    "C":"Exponer y expresar",
+	    "D":"Hablar y representar",
+	    "E":"Reflexionar y comunicar"	   
+	},
+	"answer":"E"
+    },
+    {
+	"name":"Ejercicio 24",
+	"info":"Es buen pensador quien sabe ver en los objetos todo lo que hay, pero no más de lo que hay.\n\nSegún el texto anterior, para ser buen pensador es necesaria una",
+	"options":{
+	    "A":"Ágil intuición",
+	    "B":"Firme opinión",
+	    "C":"Justa observación",
+	    "D":"Amplia imaginación",
+	    "E":"Rápida comprensión"	   	    
+	},
+	"answer":"C"
+    },
+    {
+	"name":"Ejercicio 25",
+	"info":"La importancia de la trigonometría se ha derivado de la necesidad de su aplicación a la astronomía, a la navegación y al desarrollo de imágenes por computadora.\n\nDel texto anterior, es correcto concluir que la trigonometría es muy importante por su",
+	"options":{
+	    "A":"Utilidad para la enseñanza",
+	    "B":"Utilidad para la exploración",
+	    "C":"Facilidad de entender",
+	    "D":"Eficacia en el desarrollo de nuevas tecnologías",
+	    "E":"Capacidad para explicar otras áreas del conocimiento"
+	},
+	"answer":"D"
+    },
+    {
+	"name":"Ejercicio 26",
+	"info":"Durante mucho tiempo, el ser humano utilizó las partes de su propio cuerpo como instrumentos de medición. Todavía hoy se utilizan unidades como el codo y el pie. Pero lego la comunidad científica hizo un esfuerzo mundial por definir un nuevo sistema de unidades. La __________ de las unidades pasadas residía en su variabilidad.",
+	"options":{
+	    "A":"Ventaja",
+	    "B":"Desventaja",
+	    "C":"Única ventaja",
+	    "D":"Complejidad",
+	    "E":"Utilidad"	    
+	},
+	"answer":"B"
+    }
 ]

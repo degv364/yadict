@@ -28,5 +28,17 @@
 	"definition":"Frase: Para expresar que de lo que se habla tiene apoyo o fundamento",
 	"alternatives":["según", "de acuerdo con"],
 	"example":"El presidente alteró su discurso una hora antes con base en los últimos acontecimientos"
+    },
+    {
+	"word":"sublime",
+	"definition":"Excelente, admirable. Lo más elevado en su género",
+	"alternatives":["excelente", "adminarble"],
+	"example":"El pintor refleja los colores de manera sublime"
+    },
+    {
+	"word":"trigonometría",
+	"definition":"Área de la matemática que se encarga del estudio de los triángulos, y as funciones trigonométricas",
+	"alternatives":["trigonometría"],
+	"example":"La trigonometría es fundamental en el estudio de la música, porque permite analizar las ondas musicales."
     }
 ]

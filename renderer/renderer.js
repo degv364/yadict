@@ -45,7 +45,7 @@ search_box.style.display = 'none';
 user_box.style.display   = 'none';
 status.style.display     = 'none';
 
-//global state variables
+//global state variables, I dont like this solution too much
 var global_exercises = false;
 var global_is_first = true;
 var global_exercise_index = -1;
@@ -102,6 +102,9 @@ function get_definition(idx){
     var word = global_definitions[idx]["word"];
     var word_def = global_definitions[idx]["definition"];
     var result_header = "<h5>"+word+"</h5>";
+    var example_header = "<h4> Ejemplo: </h4>";
+    var word_example = global_definitions[idx]["example"];
+    var alternatives_header = "<h4> Alternativas: </h4>";
 
     //create return button
     var btn = document.createElement("button");
@@ -111,24 +114,34 @@ function get_definition(idx){
     btn.addEventListener('click', function(event){
 	display_result(global_exercise_index);
     });
-    result.innerHTML = result_header+word_def+"</br></br></br>";
+    result.innerHTML = result_header+word_def+example_header+word_example+alternatives_header;
+    //create alternatives
+    var alt = global_definitions[idx]["alternatives"];
+    for (i=0; i<alt.length; i++){
+	create_alternative_button(idx, i);
+    }
+    //result.innerHTML = result.innerHTML+"</br></br>";
     result.appendChild(btn);
     
 }
 
-function replace_dif_word(index, idx){
+function replace_dif_word(index, idx, new_word){
     var temp_name = global_exercises[index]["name"];
     var temp_data = global_exercises[index]["info"];
     var word = global_definitions[idx]["word"];
+    if (typeof new_word == 'undefined'){
+	new_word = word;
+    }
     //replace new lines
     temp_data = replaceAll(temp_data, '\n', "<br/>");
     //replace dif_words
     temp_data = replaceAll(temp_data, word, "<!-->");//workaround to recursive replacement
-    temp_data = replaceAll(temp_data, "<!-->", "<b>"+word+"</b>");
+    temp_data = replaceAll(temp_data, "<!-->", "<b>"+new_word+"</b>");
     //replace at first word of sentence
     word = word.charAt(0).toUpperCase()+word.substring(1);
+    new_word = new_word.charAt(0).toUpperCase()+new_word.substring(1);
     temp_data = replaceAll(temp_data, word, "<!-->");//workaround to recursive replacement
-    temp_data = replaceAll(temp_data, "<!-->", "<b>"+word+"</b>");
+    temp_data = replaceAll(temp_data, "<!-->", "<b>"+new_word+"</b>");
     
     //Add name tag
     temp_data = "<h5> "+temp_name+"</h5> <br/><br/>"+temp_data
@@ -239,6 +252,19 @@ function create_def_button(idx){
     btn.appendChild(t);
     btn.addEventListener('click', function(event){
 	get_definition(idx);
+    });
+    result.appendChild(btn);
+}
+
+function create_alternative_button(idx, i){
+    var btn = document.createElement("button");
+    btn.setAttribute("id", global_definitions[idx]["alternatives"][i]);
+    btn.setAttribute("class", "nav-button");
+    var t = document.createTextNode(global_definitions[idx]["alternatives"][i]);
+    btn.appendChild(t);
+    btn.addEventListener('click', function(event){
+	var alt_word = global_definitions[idx]["alternatives"][i];
+	replace_dif_word(global_exercise_index, idx, alt_word);
     });
     result.appendChild(btn);
 }

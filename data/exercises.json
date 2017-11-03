@@ -34,5 +34,17 @@
 	    "E":"Criterio propio."
 	},
 	"answer":"E"
-    }
+    },
+    {
+	"name":"Ejercicio 20",
+	"info":"Cada vez que un ser humano lucha contra la injusticia o actúa para mejorar la suerte de otros, transmite una onda de esperanza y mantiene vivo el valor de la solidaridad.\n\nCon base en el texto anterior, se puede afirmar con respecto a la solidaridad, con certeza, que es siempre",
+	"options":{
+	    "A":"Necesaria para la humanidad.",
+	    "B":"Obstruida por la injusticia.",
+	    "C":"Dependiente de la suerte.",
+	    "D":"Aliada de la esperanza.",
+	    "E":"Enemiga del egoísmo."
+	},
+	"answer":"B"
+    }  
 ]

@@ -33,7 +33,7 @@ search{
     position : absolute;
     left: 800px;
     top: 40px;
-    background-color: #eeeeee;
+    background-color: #dddddd;
     border-radius: 12px;
     font-size: 13px;
     padding: 10px 10px;
@@ -46,11 +46,12 @@ enunciado{
     position : absolute;
     left: 290px;
     top: 40px;
-    background-color: #eeeeee;
+    background-color: #dddddd;
     border-radius: 18px;
     text-align: justify;
     font-size: 13px;
     padding: 10px 10px;
+    overflow-y: scroll;
 }
 options{
     height: 190px;
@@ -58,10 +59,11 @@ options{
     position : absolute;
     left: 290px;
     top: 560px;
-    background-color: #eeeeee;
+    background-color: #dddddd;
     border-radius: 18px;
     text-align: justify;
     padding: 10px 10px;
+    overflow-y: scroll;
 }
 resultado{
     height: 660px;
@@ -69,11 +71,12 @@ resultado{
     position : absolute;
     left: 800px;
     top: 90px;
-    background-color: #eeeeee;
+    background-color: #dddddd;
     border-radius: 18px;
     font-size: 13px;
     padding: 10px 10px;
     text-align: justify;
+    overflow-y: scroll;
 }
 
 status{

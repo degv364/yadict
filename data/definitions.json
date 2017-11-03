@@ -7,7 +7,7 @@
     },
     {
 	"word":"ahora bien",
-	"definition":"Frase: Sirve apra introducir oposición a lo dicho anteriormente.",
+	"definition":"Frase: Sirve para introducir oposición a lo dicho anteriormente.",
 	"alternatives":["pero","sin embargo"],
 	"example":"Haga lo que quiera. Ahora bien, luego no se queje"
     },
@@ -22,5 +22,11 @@
 	"definition":"Frase: suele utilizarse para enfatizar la negación de un suceso que se considera lo mínimo esperable",
 	"alternatives":["no"],
 	"example":"Estaba tan cansada que ni siquiera me saludó al llegar."
+    },
+    {
+	"word":"con base en",
+	"definition":"Frase: Para expresar que de lo que se habla tiene apoyo o fundamento",
+	"alternatives":["según", "de acuerdo con"],
+	"example":"El presidente alteró su discurso una hora antes con base en los últimos acontecimientos"
     }
 ]

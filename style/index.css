@@ -41,7 +41,7 @@ search{
 }
 
 enunciado{
-    height: 490px;
+    height: 450px;
     width: 480px;
     position : absolute;
     left: 290px;
@@ -58,7 +58,7 @@ options{
     width: 480px;
     position : absolute;
     left: 290px;
-    top: 560px;
+    top: 490px;
     background-color: #dddddd;
     border-radius: 18px;
     text-align: justify;

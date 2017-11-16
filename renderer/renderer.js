@@ -7,6 +7,7 @@ const { remote } = require('electron')
 const BrowserWindow = require('electron').remote.BrowserWindow
 const path          = require('path')
 const fs            = require('fs');
+const url = require('url')
 
 //Constants-----------------------------------------------------------------
 const top        = document.getElementById('top')
@@ -25,6 +26,7 @@ const input_name_box = document.getElementById('user_name_text')
 const startBtn   = document.getElementById('startBtn')
 const licenseBtn = document.getElementById('licenseBtn')
 const codeBtn    = document.getElementById('codeBtn')
+const quizBtn    = document.getElementById('quizBtn')
 
 const quitBtn   = document.getElementById('quit')
 const backBtn   = document.getElementById('back')
@@ -314,6 +316,14 @@ licenseBtn.addEventListener('click', function (event) {
     remote.getCurrentWindow().loadURL('https://www.gnu.org/licenses/lgpl-3.0.en.html');
 })
 
+
+quizBtn.addEventListener('click', function (event) {
+    remote.getCurrentWindow().loadURL(url.format({
+	pathname: path.resolve(__dirname, '../sections/quiz.html'),
+	protocol: 'file:',
+	slashes: true
+    }))
+})
 
 codeBtn.addEventListener('click', function (event) {
     remote.getCurrentWindow().loadURL('https://github.com/degv364/yadict');

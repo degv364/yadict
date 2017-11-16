@@ -3,21 +3,33 @@
   <head>
     <meta charset="UTF-8">
     <title>LEXICON</title>
-    <link rel="stylesheet" type="text/css" href="../style/index.css">
-    <link rel="stylesheet" type="text/css" href="../style/nav.css">
+    <link rel="stylesheet" type="text/css" href="../style/quiz.css">
   </head>
   
   <body>
     <div id="quiz-div">
-      <h1>LEXICON  |  Quiz</h1>
+      <h1>LEXICON</h1>
+      <h2>Quiz</h2>
       <button type="button" id="next" class="next"> next </button>
       <button type="button" id="end-quiz" class="end">Finalizar Quiz </button>
     </div>
     <div id="enunciado-quiz">
-      Enunciado
+      <enunciado id="enunciado">
+	texto..
+      </enunciado>
     </div>
     <div id="opciones-quiz">
-      Opciones
+      <options id="options">
+	<button type="button" id="option_a" class="option-button"> A</button>
+	-
+	<button type="button" id="option_b" class="option-button"> B</button>
+	-
+	<button type="button" id="option_c" class="option-button"> C</button>
+	-
+	<button type="button" id="option_d" class="option-button"> D</button>
+	-
+	<button type="button" id="option_e" class="option-button"> E</button>
+      </options>
     </div>
     
   </body>

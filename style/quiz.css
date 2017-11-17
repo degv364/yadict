@@ -75,6 +75,9 @@ button {
     left: 1000px;
     top: 250px;
 }
+
+
+
 .option-button{
     padding: 2px 2px;
     /*background: #000000;*/
@@ -90,4 +93,44 @@ button:hover{
 button:active {
     box-shadow: 0 2px 0 #0d932a;
     transform: translateY(3px);
+}
+
+.end{
+    width: 300px;
+    height: 100px;
+    padding: 0px 0px;
+    position : absolute;
+    box-shadow: 0 5px 0 #0d932a;
+    left: 500px;
+    top: 250px;
+    background: #2db34a;
+    z-index: 1;
+}
+
+status{
+    height: 25px;
+    width: 600px;
+    position : absolute;
+    left: 290px;
+    top: 10px;
+    text-align:left;
+    background-color: #999999;
+}
+
+.progress_bar{
+    height:100%;
+    width:50%;
+    background: #2e6bdc;
+    font-size: 13px;
+    padding: 0px 0px;
+    text-align: justify;
+    box-shadow: 0 0px 0 #004599;
+}
+.progress_bar:hover{
+    background: #2e6bdc;
+    box-shadow: 0 0px 0 #0d932a;
+}
+.progress_bar:active {
+    box-shadow: 0 0px 0 #0d932a;
+    transform: translateY(0px);
 }

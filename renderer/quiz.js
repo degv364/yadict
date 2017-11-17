@@ -30,6 +30,7 @@ var global_exercises = false;
 var global_exercise_index = -1;
 var quiz_initialized = false;
 var solved_items_cant = 0;
+var have_answered = false;
 
 var correct_items = new Set();
 var incorrect_items = new Set();
@@ -120,28 +121,38 @@ function end_quiz(){
 }
 
 option_ABtn.addEventListener('click', function(event){
-    if (quiz_initialized){
+    if (quiz_initialized && !have_answered){
+	 have_answered = true;
 	option_check("A");
+	option_ABtn.style.background = '#aaaaaa';
     }
 })
 option_BBtn.addEventListener('click', function(event){
-    if (quiz_initialized){
+    if (quiz_initialized && !have_answered){
+	have_answered = true;
 	option_check("B");
+	option_BBtn.style.background = '#aaaaaa';
     }
 })
 option_CBtn.addEventListener('click', function(event){
-    if (quiz_initialized){
+    if (quiz_initialized && !have_answered){
+	have_answered = true;
 	option_check("C");
+	option_CBtn.style.background = '#aaaaaa';
     }
 })
 option_DBtn.addEventListener('click', function(event){
-    if (quiz_initialized){
+    if (quiz_initialized && !have_answered){
+	have_answered = true;
 	option_check("D");
+	option_DBtn.style.background = '#aaaaaa';
     }
 })
 option_EBtn.addEventListener('click', function(event){
-    if (quiz_initialized){
+    if (quiz_initialized && !have_answered){
+	have_answered = true;
 	option_check("E");
+	option_EBtn.style.background = '#aaaaaa';
     }
 })
 
@@ -154,6 +165,12 @@ nextBtn.addEventListener('click', function(event){
 	    end_quiz();
 	}
 	else{
+	    option_ABtn.style.background= '#2e6bdc';
+	    option_BBtn.style.background= '#2e6bdc';
+	    option_CBtn.style.background= '#2e6bdc';
+	    option_DBtn.style.background= '#2e6bdc';
+	    option_EBtn.style.background= '#2e6bdc';
+	    have_answered = false;
 	    global_exercise_index+=1;
 	    display_all(global_exercise_index);
 	}

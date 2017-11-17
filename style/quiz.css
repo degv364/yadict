@@ -134,3 +134,16 @@ status{
     box-shadow: 0 0px 0 #0d932a;
     transform: translateY(0px);
 }
+
+timer{
+    height: 100px;
+    width: 200px;
+    position : absolute;
+    left: 10px;
+    top: 500px;
+    background-color: #dddddd;
+    border-radius: 18px;
+    text-align: justify;
+    font-size: 20px;
+    padding: 10px 10px;
+}

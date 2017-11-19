@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>LEXICON</title>
+    <link rel="stylesheet" type="text/css" href="../style/zen.css">
+    <link rel="stylesheet" type="text/css" href="../style/nav.css">
+  </head>
+  <body>
+    <div id="nav_menu">
+      <nav class="nav js-nav">
+	<header class="nav-header" id="nav_header">
+	  <h2 class="nav-title">LEXICON!</h2>
+	  <button type="button" id="quit" class="quit"> Salir</button>
+	  <button type="button" id="back" class="back"> back </button>
+	  <button type="button" id="next" class="next"> next </button>
+	</header>
+	<div class="nav-item u-category-windows" id="exercises_list">
+	  <h5 class="nav-category">
+            Ejercicios
+	  </h5>
+	</div>
+	<div class="nav-item u-category-menu">
+	  <h5 class="nav-category">
+            Textos
+	  </h5>
+	  <button type="button" id="poem" data-section="poem" class="nav-button">Poema</button>
+	  <button type="button" id="news" data-section="news" class="nav-button">Noticia</button>
+	  <button type="button" id="news" data-section="news" class="nav-button">Cuento</button>
+	</div>
+	<div class="nav-item u-category-native-ui">
+	  <h5 class="nav-category">
+            Juegos
+	  </h5>
+	  <button type="button" id="game1" data-section="game1" class="nav-button">Game 1</button>
+	  <button type="button" id="game2" data-section="game2" class="nav-button">Game 2</button>
+	  <button type="button" id="game2" data-section="game2" class="nav-button">Game 3</button>
+	  <button type="button" id="game2" data-section="game2" class="nav-button">Game 4</button>
+	</div>
+	<h3 id="developer">
+	  Desarrollado por Daniel García Vaglio
+	</h3>
+      </nav>
+    </div>
+
+    <status id="status">
+      <button type="button" id="progress_bar" class="progress_bar"> 0%  </button>
+    </status>
+
+    <user id="user">
+      Anónimo
+    </user>
+
+    <search id="search">
+      buscar...
+    </search>
+    
+    <enunciado id="enunciado">
+      texto..
+    </enunciado>
+    
+    <options id="options">
+      <button type="button" id="option_a" class="option-button"> A</button>
+      -
+      <button type="button" id="option_b" class="option-button"> B</button>
+      -
+      <button type="button" id="option_c" class="option-button"> C</button>
+      -
+      <button type="button" id="option_d" class="option-button"> D</button>
+      -
+      <button type="button" id="option_e" class="option-button"> E</button>
+    </options>
+    
+    <resultado id="resultado">
+      resulttexto..
+    </resultado>
+    
+    <version class="version" id="version">
+      <p>
+      Desarrollado por Daniel García Vaglio --degv364@gmail.com--
+      </p>
+      Versions:
+      We are using Node.js <script>document.write(process.versions.node)</script>,
+      Chromium <script>document.write(process.versions.chrome)</script>,
+      and Electron <script>document.write(process.versions.electron)</script>.
+    </version>
+  </body>
+  <script>
+    // You can also require other files to run in this process
+    require('../renderer/zen.js')
+  </script>
+</html>

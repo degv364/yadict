@@ -1,3 +1,8 @@
+*{
+    font-family: Arial;
+}
+
+
 h2 {
     color: #1e5bcc;
     font-family: 'Helvetica Neue', sans-serif;
@@ -64,7 +69,7 @@ h5{
     line-height: 2;
     text-align: left;
     font: inherit;
-    font-size: 13px;
+    font-size: 14px;
     color: inherit;
     border: none;
     background-color: transparent;

@@ -1,3 +1,7 @@
+*{
+    font-family: Arial;
+    font-size:medium;
+}
 
 
 h1 { color: #1e5bcc;
@@ -41,7 +45,7 @@ search{
 }
 
 enunciado{
-    height: 450px;
+    height: 350px;
     width: 480px;
     position : absolute;
     left: 290px;
@@ -49,16 +53,16 @@ enunciado{
     background-color: #dddddd;
     border-radius: 18px;
     text-align: justify;
-    font-size: 13px;
+    font-size: 18px;
     padding: 10px 10px;
     overflow-y: scroll;
 }
 options{
-    height: 190px;
+    height: 250px;
     width: 480px;
     position : absolute;
     left: 290px;
-    top: 490px;
+    top: 410px;
     background-color: #dddddd;
     border-radius: 18px;
     text-align: justify;
@@ -212,7 +216,7 @@ button:active {
     padding: 2px 2px;
     /*background: #000000;*/
     width: 100%;
-    font-size: 13px;
+    font-size: 16px;
     text-align: justify;
 }
 

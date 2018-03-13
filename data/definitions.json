@@ -40,5 +40,29 @@
 	"definition":"Área de la matemática que se encarga del estudio de los triángulos, y as funciones trigonométricas",
 	"alternatives":["trigonometría"],
 	"example":"La trigonometría es fundamental en el estudio de la música, porque permite analizar las ondas musicales."
+    },
+    {
+	"word":"constituir",
+	"definition":"Asumir un cargo o una responsabilidad. También puede referirse a componer o formar.",
+	"alternatives":["elegir", "agrepar", "formar"],
+	"example":"El agua está constituida por átomos de hidrógeno y oxígeno"
+    },
+    {
+	"word":"onda",
+	"definition":"Fenómeno físico que transporta energía. También se puede referir a las ondulaciones en cabello, telas o líquidos",
+	"alternatives":["ola", "ondulación"],
+	"example":"El día estuvo tan caliente que lo catalogaron como una onda de calor"
+    },
+    {
+	"word":"antologista",
+	"definition":"Alguien que reune o recopila",
+	"alternatives":["recopilador"],
+	"example":"El antologista logró preparar la enciclopedia."
+    },
+    {
+	"word":"opulento",
+	"definition":"Alguien con mucho dinero, que tiene una vida lujosa.",
+	"alternatives":["adinerado"],
+	"example":"Las familias opulentas viajan mucho más."
     }
 ]

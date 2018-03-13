@@ -52,6 +52,20 @@ options{
     overflow-y: scroll;
 }
 
+answers{
+    height: 400px;
+    width: 600px;
+    position : absolute;
+    left: 290px;
+    top: 40px;
+    background-color: #dddddd;
+    border-radius: 18px;
+    text-align: justify;
+    font-size: 13px;
+    padding: 10px 10px;
+    overflow-y: scroll;
+}
+
 button {
     border: 0;
     background: #2e6bdc;
@@ -96,13 +110,13 @@ button:active {
 }
 
 .end{
-    width: 300px;
+    width: 270px;
     height: 100px;
     padding: 0px 0px;
     position : absolute;
-    box-shadow: 0 5px 0 #0d932a;
-    left: 500px;
+    left: 900px;
     top: 250px;
+    box-shadow: 0 5px 0 #0d932a;
     background: #2db34a;
     z-index: 1;
 }

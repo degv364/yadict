@@ -14,6 +14,7 @@ const beginQuizBtn = document.getElementById('begin-quiz')
 const enunciado = document.getElementById('enunciado')
 const options = document.getElementById('options')
 const progress_bar = document.getElementById('progress_bar')
+const answers = document.getElementById('answers')
 
 const option_ABtn = document.getElementById('option_a');
 const option_BBtn = document.getElementById('option_b');
@@ -24,12 +25,14 @@ const option_EBtn = document.getElementById('option_e');
 // Hide end quiz button
 endQuizBtn.style.display = 'none';
 progress_bar.style.display = 'none';
+answers.style.display = 'none';
 
 // Global variables for exercises
 var global_exercises = false;
 var global_exercise_index = -1;
 var quiz_initialized = false;
 var solved_items_cant = 0;
+var global_student_answers = [];
 var have_answered = false;
 
 var correct_items = new Set();
@@ -101,8 +104,28 @@ function display_all(index){
     display_options(index);
 }
 
+function display_answers(cant_correct, cant_incorrect){
+    data = "Correctas: " + cant_correct.toString()+ ", Incorrectas: "+cant_incorrect.toString();
+    for (index = 0; index < global_exercises.length; index++){
+	data += "<br><br><br>";
+	data += "<b>"+global_exercises[index]["name"]+"</b>  ";
+	data += "Estudiante: "+global_student_answers[index]+" Correcta: "+global_exercises[index]["answer"]+"<br><br>"
+	data += global_exercises[index]["info"] + "<br><br>"
+	data += "A)" + global_exercises[index]["options"]["A"] + "<br>"
+	data += "B)" + global_exercises[index]["options"]["B"] + "<br>"
+	data += "C)" + global_exercises[index]["options"]["C"] + "<br>"
+	data += "D)" + global_exercises[index]["options"]["D"] + "<br>"
+	data += "E)" + global_exercises[index]["options"]["E"] + "<br>"
+	data += "<br><br> Explicación <br>"
+	data += global_exercises[index]["explanation"]
+    }
+
+    answers.innerHTML = data;
+}
+
 function option_check(input_answer){
     var correct_answer = global_exercises[global_exercise_index]["answer"];
+    global_student_answers.push(input_answer)
     if (input_answer === correct_answer){
 	correct_items.add(global_exercise_index);
     }
@@ -118,11 +141,15 @@ function option_check(input_answer){
 function end_quiz(){
     quiz_initialized
     endQuizBtn.style.display = 'block';
+    answers.style.display = 'block';
+    var cant_correct_answers = correct_items.size;
+    var cant_incorrect_answers = incorrect_items.size;
+    display_answers(cant_correct_answers, cant_incorrect_answers);
 }
 
 option_ABtn.addEventListener('click', function(event){
     if (quiz_initialized && !have_answered){
-	 have_answered = true;
+	have_answered = true;
 	option_check("A");
 	option_ABtn.style.background = '#aaaaaa';
     }

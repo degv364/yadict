@@ -1,6 +1,6 @@
 [
     {
-	"name":"Ejercicio 17",
+	"name":"Ej 1. Lo visible e invisible",
 	"info":"Algunos magos afirman que, cuando visitan un bosque o un desierto, son capaces de sentir y ver el silencio, como si la ausencia de sonido tuviera alguna propiedad --aún no descubierta por la ciencia--  más allá de lo meramente auditivo. Ahora bien, también es posible encontrar personas que ni siquiera creen en la existencia de los átomos, las ondas sonoras ni de ningún otro tipo de cosas invisibles para el ser humano, cuya percepción solo puede darse a través de instrumentos tecnológicos especiales.\n\nEn el texto anterior se plantea:",
 	"options":{
 	    "A":"Una contradicción entre ciencia y magia.",
@@ -9,10 +9,11 @@
 	    "D":"Imposibilidad de percibir cosas muy pequeñas sin instrumentos tecnológicos.",
 	    "E":"Un contraste con respecto a la confianza que tienen las personas sobre las cosas no visibles."
 	},
-	"answer":"E"
+	"answer":"E",
+	"explanation":"En resumen el texto habla sobre algunas personas que sienten cosas no visibles y lo contrasta con otras personas que no creen en ellas. El tema principal es sobre la creencia de las personas en cosas invisibles. Por esta razón se puede eliminar la respuesta A, ya que el texto no trata de contrastar la ciencia y la magia. La B también se descarta pues no se habla de transiciones. La C se descarta porque el texto no habla sobre al desconfianza de la ciencia contra la magia. Sino que más bien plantea que al gente que no cree en cosas invisibles está hasta en contra de la ciencia. La opción D se descarta, porque solo se refiere a una parte pequeña del texto. Que es la imposibilidad de ver ciertas cosas, pero no se refiere a la primera parte donde se habla de que los magos pueden percibir cosas invisibles. L opción correcta es la E porque explica la idea principal del texto. Se trata sobre contrastar los que sí creen en cosas invisibles como los magos y los que no creen en las cosas invisibles del todo."
     },
     {
-	"name":"Ejercicio 18",
+	"name":"Ej 2. Conocimiento y engaño",
 	"info":"Si todos los humanos tuvieran un completo recuerdo del pasado, conocimiento del presente y previsión del futuro, los razonamientos engañosos hábilmente expuestos por los mentirosos no podrían engañarlos del modo como lo hacen. \n\nDe acuerdo con el texto anterior:",
 	"options":{
 	    "A":"Quien razona hábilmente puede recordar el pasado.",
@@ -21,10 +22,11 @@
 	    "D":"Las personas engañadas poseen conocimientos incompletos sobre la realidad.",
 	    "E":"Los mentirosos engañan sobre todo mediante razonamientos hábilmente expuestos."
 	},
-	"answer":"C"
+	"answer":"D",
+	"explanation":"El texto en palabras más sencillas dice que <si los humanos recordaran el pasado serían más difíciles de engañar>. El texto dice que si hay memoria entonces hay razonamiento, pero no al revés. El razonamiento no produce buena memoria, Entonces se elimina la opción A. La opción E se refiere a cómo hace la gente para engañar, no a como evitar ser engañado, por lo tanto se elimina. La opción B hace solamente referencia a los conocimientos del presente, pero el texto habla explícitamente del pasado, presente y futuro; entonces se elimina. La opción C hace referencia a conocer el presente, pasado y futuro igual que el texto, pero no hace referencia al engaño. Se elimina. Finalmente la opción D dice que las personas engañadas tienen un conocimiento incompleto. Esto es cierto, ya que el texto dice que si la gente conociera, no sería engañada"
     },
     {
-	"name":"Ejercicio 19",
+	"name":"Ej 3. Escoger",
 	"info":"El ser humano nace como persona cuando está en capacidad de escoger.\n\nEl autor del texto anterior establece que se es persona, cuando se adquiere",
 	"options":{
 	    "A":"El desarrollo intelectual.",
@@ -33,10 +35,11 @@
 	    "D":"Madurez física.",
 	    "E":"Criterio propio."
 	},
-	"answer":"E"
+	"answer":"E",
+	"explanation":"El texto dice que se comienza a ser persona cuando se obtiene la capacidad de escoger. La capacidad de escoger no esta necesariamente relacionada con la edad, entonces se eliminan las opciones C y D. Tampoco se hace referencia al intelecto o alguna otra capacidad fuera de poder escoger, entonces se eliminando A y B. Finalmente la capacidad de escoger es un sinónimo del criterio propio. Por lo tanto la respuesta correcta es E."
     },
     {
-	"name":"Ejercicio 20",
+	"name":"Ej 4. La solidaridad",
 	"info":"Cada vez que un ser humano lucha contra la injusticia o actúa para mejorar la suerte de otros, transmite una onda de esperanza y mantiene vivo el valor de la solidaridad.\n\nCon base en el texto anterior, se puede afirmar con respecto a la solidaridad, con certeza, que es siempre",
 	"options":{
 	    "A":"Necesaria para la humanidad.",
@@ -45,10 +48,11 @@
 	    "D":"Aliada de la esperanza.",
 	    "E":"Enemiga del egoísmo."
 	},
-	"answer":"B"
+	"answer":"B",
+	"explanation":"El texto en palabras más sencillas dice <luchar contra la injusticia, da esperanza y mantiene a la solidaridad>. Transmitir una onda de esperanza, es una manera complicada de decir dar esperanza. Cuando se dice que se mantiene vivo el valor de la solidaridad es una manera de expresar que se mantiene la solidaridad. La solidaridad no tiene vida, esto está en sentido figurado. Hay tres elementos clave: la injusticia, la esperanza y la solidaridad. Esto elimina a las opciones A y E pues no mencionan ninguno de los tres puntos clave. La C no puede ser porque cuando el texto se refiere a mejorar la suerte de otros, se refiere a ayudar a los demás no al significado de suerte como tal. El texto no hace una relación sobre la esperanza y la solidaridad. Solo dice que ambas se obtienen de luchar contra la injusticia. Sin embargo es posible obtener esperanza sin solidaridad, como cuando se reciben buenas noticias. Entonces se elimina la D. La respuesta correcta es E. ya que el texto dice que la solidaridad se obtiene de luchar contra la injusticia."
     },
     {
-	"name":"Ejercicio 21",
+	"name":"Ej 5. La profundidad",
 	"info":"En las profundidades del mar, dadas sus características especiales, existe una fauna completamente desconocida en otras partes del mar. \n\nDel texto anterior es correcto concluir que, respecto a las diferentes partes del mar, la fauna de las profundidades es, con certeza",
 	"options":{
 	    "A":"Muy compleja",
@@ -57,10 +61,11 @@
 	    "D":"Hermosa",
 	    "E":"Peligrosa"
 	},
-	"answer":"C"
+	"answer":"C",
+	"explanation":"Cuando el texto dice que la fauna del fondo del mar es desconocida en otras partes del mar, quiere decir que solo se encuentra en el fondo. Es decir, la fauna de lo profundo solo está en lo profundo, no en otras partes. No se habla de complejidad, variedad, hermosura o peligrosidad, solo que no está presente en otras partes del mar. Se eliminan la A, B, D, y E. La respuesta correcta es C porque dice que la fauna de las profundidades es distinta a la del resto del mar. Esto es cierto, porque el texto dice que la fauna de las profundidades solo esta en las profundidades, y que no se encuentra en el resto del mar. Entonces la fauna del fondo del mar es distinta al resto."
     },
     {
-	"name":"Ejercicio 22",
+	"name":"Ej 6. La verdad",
 	"info":"Nadie puede constituirse en dueño de la verdad, esta no tiene propietario.  Se alcanza o se demuestra, eso es todo; lo demás no tiene sentido.\nObserve las siguientes expresiones:\n\n I. No tiene sentido demostrar la verdad.\n II. No tiene sentido alcanzar la verdad.\n III. No tiene sentido adueñarse de la verdad.\n\nDe acuerdo con la información dada",
 	"options":{
 	    "A":"Todas son verdaderas",
@@ -69,10 +74,11 @@
 	    "D":"Solo la II es verdadera",
 	    "E":"Solo la III es verdadera"
 	},
-	"answer":"E"
+	"answer":"E",
+	"explanation":"Cuando el texto dice que nadie puede constiruirse dueño de la verdad, quiere decir que la verdad no tiene dueño. Entonces la afirmación III es correcta. La segunda parte del texto dice que la verdad se alcanza o se demuestra. La afirmación I dice que no tiene sentido demostrar la verdad, pero esto va en contra del texto. La afirmación II dice que no tiene sentido alcanzar la verdad, pero esto va en contra del texto. Finalmente solo la afirmación III es verdadera, entonces la respuesta correcta es E."
     },
     {
-	"name":"Ejercicio 23",
+	"name":"Ej 7. Pensamientos y expresiones",
 	"info":"A altos pensamientos es preciso que correspondan sublimes expresiones.\n\nEl texto anterior propone una correspondencia entre",
 	"options":{
 	    "A":"Explicar y sugerir",
@@ -81,10 +87,11 @@
 	    "D":"Hablar y representar",
 	    "E":"Reflexionar y comunicar"	   
 	},
-	"answer":"E"
+	"answer":"E",
+	"explanation":"El texto puede dividirse en dos partes, los altos pensamientos, y las sublimes expresiones. La primera parte se relaciona a pensar. De las opciones solo la B y la E tiene relación a pensar en la primera parte. La segunda parte de sublimes expresiones se relaciona con expresar, solamente las opciones C y E tienen una segunda palabra relacionada a expresar. Por lo tanto la respuesta correcta es E."
     },
     {
-	"name":"Ejercicio 24",
+	"name":"Ej 8. Buen pensador",
 	"info":"Es buen pensador quien sabe ver en los objetos todo lo que hay, pero no más de lo que hay.\n\nSegún el texto anterior, para ser buen pensador es necesaria una",
 	"options":{
 	    "A":"Ágil intuición",
@@ -93,10 +100,11 @@
 	    "D":"Amplia imaginación",
 	    "E":"Rápida comprensión"	   	    
 	},
-	"answer":"C"
+	"answer":"C",
+	"explanation":"El texto es muy claro, entonces es necesario explicar las opciones. Ágil intuición se refiere a tener buena intuición o presentimientos. Firme opinión se refiere a estar seguro de lo que uno opina. Justa observación se refiere a ser cuidadoso con lo que se observa, no ver ni más, ni menos. Amplia imaginación se refiere a tener mucha imaginación. Rápida comprensión se refiere a entender rápidamente conceptos. De todas las opciones la correcta es la C."
     },
     {
-	"name":"Ejercicio 25",
+	"name":"Ej 9. Trigonometría",
 	"info":"La importancia de la trigonometría se ha derivado de la necesidad de su aplicación a la astronomía, a la navegación y al desarrollo de imágenes por computadora.\n\nDel texto anterior, es correcto concluir que la trigonometría es muy importante por su",
 	"options":{
 	    "A":"Utilidad para la enseñanza",
@@ -105,11 +113,12 @@
 	    "D":"Eficacia en el desarrollo de nuevas tecnologías",
 	    "E":"Capacidad para explicar otras áreas del conocimiento"
 	},
-	"answer":"D"
+	"answer":"D",
+	"explanation":"El texto habla sobre la importancia de la trigonometría. La primera opción es incorrecta porque no se habla de enseñanza en el texto. De igual manera la C es incorrecta porque no se habla de qué tan fácil es la trigonometría. La opción B se descarta porque dice que la trigonometría sirve para desarrollar imágenes por computadora, que no está relacionado a exploración. La palabras claves son aplicación y desarrollo. De esta manera se sabe que la D es correcta pero la E no lo es. La astronomía, la navegación y las imágenes por computadora son tecnologías que necesitan de la trigonometría"
     },
     {
-	"name":"Ejercicio 26",
-	"info":"Durante mucho tiempo, el ser humano utilizó las partes de su propio cuerpo como instrumentos de medición. Todavía hoy se utilizan unidades como el codo y el pie. Pero lego la comunidad científica hizo un esfuerzo mundial por definir un nuevo sistema de unidades. La __________ de las unidades pasadas residía en su variabilidad.",
+	"name":"Ej 10. Medición",
+	"info":"Durante mucho tiempo, el ser humano utilizó las partes de su propio cuerpo como instrumentos de medición. Todavía hoy se utilizan unidades como el codo y el pie. Pero luego la comunidad científica hizo un esfuerzo mundial por definir un nuevo sistema de unidades. La __________ de las unidades pasadas residía en su variabilidad.",
 	"options":{
 	    "A":"Ventaja",
 	    "B":"Desventaja",
@@ -117,6 +126,46 @@
 	    "D":"Complejidad",
 	    "E":"Utilidad"	    
 	},
-	"answer":"B"
+	"answer":"B",
+	"explanation":"En el texto se habla de dos sistemas de medición, el viejo que utiliza partes del cuerpo, y el nuevo definidos por científicos. Como fue sustituido, se espera que el nuevo sea mejor, por lo que la palabra a probablemente sea una palabra negativa. Por otra parte se dice que las unidades pasadas eran variables. Cuando uno mido algo, quiere que siempre mida lo mismo, por lo que un sistema de medición variable es malo. De las palabras la única con significado negativos es desventaja. La respuesta correcta es B."
+    },
+    {
+	"name":"Ej 11. Antología",
+	"info":"El tiempo es el mejor antologista, o el único, tal vez. (Jorge Luis Borges)\n\n Según el texto:",
+	"options":{
+	    "A":"El timepo sirve para distanciar a las personas",
+	    "B":"El tiempo no tiene utilidad",
+	    "C":"Lo único que existe es el tiempo",
+	    "D":"El tiempo ayuda a unificar a las personas",
+	    "E":"Solamente hay una manera de pasar el tiempo"
+	},
+	"answer":"D",
+	"explanation":"El texto dice que el tiempo es el mejor antologista. Antologista se asocia a unificar o recopilar. Entonces la respuesta correcta es la D"
+    },
+    {
+	"name":"Ej 12. Igualdad de riqueza",
+	"info":"La igualdad de la riqueza debe consistir en que ningún ciudadano sea tan opulento que pueda comprar a otro. Ni ninguno tan pobre que se vea necesitado de venderse. \n\n Del texto se concluye que:",
+	"options":{
+	    "A":"Los ricos no deberían existir",
+	    "B":"La diferencia entre ricos y pobres es pequeña, cuando hay igualdad",
+	    "C":"Es incorrecto comprar a una persona",
+	    "D":"La gente pobre tiene más necesidades",
+	    "E":"La desigualdad de riqueza fomenta comprar personas"
+	},
+	"answer":"B",
+	"explanation":"El texto no hace un juicio de valor (no trata de decir si algo es bueno o malo), solamente trata de definir la igualdad de riqueza, entonces se eliminan las opciones A y C. El texto no hace referenci a la desigualdad, entonces se elimina la E. Aunque la D es cierta en la vida real, el texto no dice eso. El texto dice que la gente no debe tener la necesidad de venderse, no dice que los pobres tienen más necesidades. Se elimina la D. La respuesta B es la correcta, ya que el texto sí se refiere a la diferencia entre ricos y pobres y como esta se reduce cuando existe igualdad de riqueza."
+    },
+    {
+	"name":"Ej 13. El soñador",
+	"info":"Cuando hayamos descubierto las leyes que rigen la vida, nos daremos cuenta de que el hombre de acción se ilusiona más que el soñador. \n\n Según el texto:",
+	"options":{
+	    "A":"Las leyes de la vida no nos permiten ilusionarnos",
+	    "B":"Los soñadores no conocen las leyes de la vida",
+	    "C":"Los que actúan sueñan más que los que sólo imaginan",
+	    "D":"Para lograr los objetivos hay que trabajar por obtenerlos",
+	    "E":"Las leyes de la vida son un invento de los soñadores"
+	},
+	"answer":"C",
+	"explanation":"El texto dice que las leyes de la vida se descubren, por lo tanto no se inventan, entonces se elimina la opción E. El texto no hace referencia a logro de objetivos, entonces se elimina la opción D. Según el texto, descubrir las leyes de la vida nos va a permitir darnos cuenta de algo. Pero aún sin saber las leyes de la vida, podemos ilusionarnos, entonces la A es incorrecta. La opción B puede ser correcta, porque según el texto nadie conoce aún las leyes de la vida. Sin embargo hay una respuesta aún mejor. En el texto soñador se utiliza para describir a alguien lleno de ilusiones, de metas y objetivos, no alguein que duerme. Además indica que la gente que actúa está más ilusionada que los que solo sueñan. Por eso la correcta es la C."
     }
 ]
